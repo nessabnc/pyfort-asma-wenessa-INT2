@@ -25,10 +25,6 @@ def solve_linear_equation():
     return a,b, x
 
 def math_challenge_equation():
-    solve_linear_equation()
-
-
-
 
 
 
