@@ -26,7 +26,7 @@ def solve_linear_equation():
 
 def math_challenge_equation():
     solve_linear_equation()
-    print("Math Challenge: Solve the equation", a,"x+", b,"=0")
+
 
 
 
