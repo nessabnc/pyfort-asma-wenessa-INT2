@@ -1,5 +1,7 @@
-from math_challenges import *
-math_challenge_equation()
+
+
+from chance_challenges import *
+shell_game()
 
 
 

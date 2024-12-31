@@ -76,7 +76,7 @@ def math_challenge_prime():
         return False
 
 def math_challenge():
-    challenges= [math_challenge_prime, math_challenge_factorial]
+    challenges= [math_challenge_prime, math_challenge_factorial, math_challenge_equation()]
     challenge= random.choice(challenges)
     print(challenge())
 
