@@ -17,7 +17,7 @@ def math_challenge_factorial():
         print("Correct! You win a key")
         return True
     else:
-        print("Incorrect, better luck next time...")
+        print("Incorrect, better luck next time...\n")
         return False
 
 
@@ -35,7 +35,7 @@ def math_challenge_equation():
     z=str(int(-b/a))
     t= input("Enter your answer: \n")
     if t==r or t==z:
-        print("Correct! You win a key")
+        print("Correct! You win a key\n")
         return True
     else :
         print("Incorrect")
@@ -69,14 +69,14 @@ def math_challenge_prime():
     answer= int(input("Enter the prime number closest to" + ' '+ str(a)))
     n = nearest_prime(answer)
     if answer == n:
-        print("Correct! You win a key")
+        print("Correct! You win a key\n")
         return True
     else :
-        print("Incorrect")
+        print("It is incorrect, you have lost\n")
         return False
 
 def math_challenge():
-    challenges= [math_challenge_prime, math_challenge_factorial, math_challenge_equation()]
+    challenges= [math_challenge_prime, math_challenge_factorial, math_challenge_equation]
     challenge= random.choice(challenges)
     print(challenge())
 
