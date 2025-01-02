@@ -6,6 +6,7 @@ def introduction():
     print("The objective is to collect three keys to unlock the treasure room.")
     print("Good luck on your adventure!")
 
+
 def compose_equipe():
     equipe = []
     nombre_joueurs = 0
@@ -13,23 +14,22 @@ def compose_equipe():
         nombre_joueurs = int(input("How many players would you like to include in the team? "))
         if nombre_joueurs <= 0 or nombre_joueurs > 3:
             print("Error: You can have a maximum of 3 players. Please enter a valid number.")
-    for i in range(nombre_joueurs):
-        name = input(f"Enter the name of player {i + 1}: ")
-        profession = input(f"Enter the profession of player {i + 1}: ")
-        is_leader_input = input(f"Is {name} the team leader? (yes/no): ").lower()
+
+    for i in range(1, nombre_joueurs + 1):
+        name = input("Enter the name of player " + str(i) + ": ")
+        profession = input("Enter the profession of player " + name + ": ")
+        is_leader_input = input("Is " + name + " the team leader? (yes/no): ").lower()
         is_leader = is_leader_input == "yes"
-        player = {
-            "name": name,
-            "profession": profession,
-            "is_leader": is_leader,
-            "keys_wons": 0}
+        player = {"name": name, "profession": profession, "is_leader": is_leader, "keys_wons": 0}
         equipe.append(player)
+
     leader_found = False
     for player in equipe:
         if player["is_leader"]:
             leader_found = True
-    if leader_found == False:
+    if not leader_found:
         equipe[0]["is_leader"] = True
+
     return equipe
 
 
