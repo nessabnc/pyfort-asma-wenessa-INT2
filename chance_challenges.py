@@ -69,7 +69,9 @@ def chance_challenges():
     challenge= random.choice(challenges)
     print(challenge())
 
-
+shell_game()
+roll_dice_game()
+chance_challenges()
 
 
 
