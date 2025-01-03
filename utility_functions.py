@@ -38,7 +38,7 @@ def challenges_menu():
     print("1. Mathematics challenge")
     print("2. Logic challenge")
     print("3. Chance challenge")
-    print("4. Père Fouras' riddle")
+    print("4. Père Fourras' riddle")
     choice = int(input("Enter the number corresponding to your chosen challenge: "))
     while choice < 1 or choice > 4:
         print("Error: Invalid choice. Please choose a number between 1 and 4.")
