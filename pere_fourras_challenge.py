@@ -8,12 +8,12 @@ def load_riddles(file):
     return riddles
 
 
-def pere_fouras_riddles(file):
+def pere_fourras_riddles(file):
     riddles = load_riddles(file)
     riddle = random.choice(riddles)
     attempts = 3
 
-    print("Père Fouras challenges you with a riddle from " + riddle["emission"] + " (Show " + riddle["number"] + "):")
+    print("Père Fourras challenges you with a riddle from " + riddle["emission"] + " (Show " + riddle["number"] + "):")
     print(riddle["question"])
 
     while attempts > 0:
